@@ -1,0 +1,126 @@
+.contact-page .page-header {
+  background-color: var(--primary-color);
+  padding: 12rem 0 6rem;
+  color: #fff;
+}
+
+.contact-wrapper {
+  display: flex;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  margin-top: -8rem;
+  background: var(--surface-color);
+  position: relative;
+  z-index: 10;
+}
+
+.contact-info-panel {
+  flex: 1;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-deco-circle {
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: rgba(200, 157, 102, 0.1);
+  z-index: 1;
+}
+
+.panel-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.panel-desc {
+  color: #a0a0a0;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 2;
+}
+
+.info-items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.info-icon {
+  color: var(--accent-color);
+  font-size: 1.5rem;
+  margin-top: 0.2rem;
+}
+
+.info-item h4 {
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.info-item p {
+  color: #a0a0a0;
+  font-size: 0.95rem;
+}
+
+.contact-form-panel {
+  flex: 2;
+  padding: 4rem;
+}
+
+.contact-form .input-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem 0;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: var(--text-main);
+  background: transparent;
+  outline: none;
+  transition: var(--transition);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-bottom-color: var(--accent-color);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+  .contact-wrapper { flex-direction: column; }
+  .contact-info-panel, .contact-form-panel { padding: 3rem 2rem; }
+}
